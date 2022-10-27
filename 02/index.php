@@ -20,7 +20,7 @@
 
 <body>
   <div class="box">
-    <form action="followers/result.php" method="post" enctype="multipart/form-data">
+    <form action="repositories/result.php" method="post" enctype="multipart/form-data">
       <div class="line1">
         <div class="icon"><i class="bx bx-user-circle"></i></div>
         <div class="input"><input id="lname" type="text" name="user" placeholder="Github პროფილი" required /></div>
@@ -40,5 +40,6 @@
     </form>
   </div>
 </body>
+<script src="js/js.js"></script>
 
 </html>

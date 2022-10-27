@@ -30,31 +30,31 @@ include_once '../root/function.php';
 
         $userName = $_GET['user'];
         $fromPageNumber = $_GET['page'];
-        $sumbitType = $_GET['type'];
+
         $aggPageNumber = $_GET['number'];
 
-        if ($sumbitType == "repo") {
 
-          for ($i = 1; $i < $fromPageNumber; $i++) {
+
+        for ($i = 1; $i < $fromPageNumber; $i++) {
         ?>
-            <li class='page-item'><a class='page-link' href='process.php?page=<?= $i ?>&user=<?= $userName ?>&type=<?= $sumbitType ?>&number=<?= $aggPageNumber ?>'><?= $i ?></a></li>
+          <li class='page-item'><a class='page-link' href='process.php?page=<?= $i ?>&user=<?= $userName ?>&type=followers&number=<?= $aggPageNumber ?>'><?= $i ?></a></li>
 
-          <?php
+        <?php
 
-          }
+        }
 
-          ?>
-          <li class='page-item active'><a class='page-link' href='process.php?page=<?= $i  ?>&user=<?= $userName  ?>&type=<?= $sumbitType  ?>&number=<?= $fromPageNumber  ?>'><?= $fromPageNumber  ?></a></li>
+        ?>
+        <li class='page-item active'><a class='page-link' href='process.php?page=<?= $i  ?>&user=<?= $userName  ?>&type=followers&number=<?= $fromPageNumber  ?>'><?= $fromPageNumber  ?></a></li>
 
 
-          <?php
+        <?php
 
-          for ($i = $fromPageNumber + 1; $i < $aggPageNumber; $i++) {
+        for ($i = $fromPageNumber + 1; $i < $aggPageNumber; $i++) {
 
-          ?>
-            <li class='page-item'><a class='page-link' href='process.php?page=<?= $i  ?>&user=<?= $userName  ?>&type=<?= $sumbitType  ?>&number=<?= $aggPageNumber  ?>'><?= $i  ?></a></li>
-          <?php
-          } ?>
+        ?>
+          <li class='page-item'><a class='page-link' href='process.php?page=<?= $i  ?>&user=<?= $userName  ?>&type=followers&number=<?= $aggPageNumber  ?>'><?= $i  ?></a></li>
+        <?php
+        } ?>
 
       </ul>
 
@@ -71,28 +71,24 @@ include_once '../root/function.php';
 
 
 
-          $result = parseJson("https://api.github.com/users/$userName/repos?per_page=20&page=$fromPageNumber");
-          $api = json_decode($result, true);
-          $x = ($fromPageNumber - 1) * 20 + 1;
-          foreach ($api as $key => $value) {
+        $result = parseJson("https://api.github.com/users/$userName/followers?per_page=20&page=$fromPageNumber");
+        $api = json_decode($result, true);
+        $x = ($fromPageNumber - 1) * 20 + 1;
+        foreach ($api as $key => $value) {
         ?>
           <tr>
             <td><?= $x++  ?></td>
-            <td><a href='<?= $value['html_url'] ?>' target='_blank'><?= $value['name'] ?></a></td>
-            <td><?= $value['description'] ?></td>
+            <td><a href='<?= $value['html_url'] ?>' target='_blank'><img class='nano' src='<?= $value['avatar_url'] ?>' alt='' style='width: 42px'></a></td>
+            <td><?= $value['login'] ?></td>
           </tr>
-      <?php
+        <?php
 
 
-
-          }
-        } else {
-          // emptyUser("მომხმარებელს არ აქვს რეპოზიტორია");
 
         }
 
 
-      ?>
+        ?>
     </div>
 </body>
 

@@ -3,11 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="GPX Bitcamp" />
-  <meta property="og:title" content="GPX Bitcamp" />
-  <meta property="og:description" content="Junior_PHP" />
-  <meta property="og:image" content="https://gpx.ge/root/img/main.png" />
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="img/ico.ico" />

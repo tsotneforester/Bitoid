@@ -1,11 +1,5 @@
 # ✅03 - Marvel API ⚔
 
----
-
----
-
----
-
 [Bitoid Technologies](https://www.bitcamp.ge/) challenge for API calling and storing
 data in database
 

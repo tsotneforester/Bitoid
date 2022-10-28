@@ -20,4 +20,4 @@ CREATE TABLE `heroes` (
 
 ## Screenshots
 
-![App Screenshot](03/vault/screenshot.PNG)
+![App Screenshot](vault/screenshot.PNG)

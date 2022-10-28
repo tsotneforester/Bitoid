@@ -1,4 +1,4 @@
-# ✅02 - Github API ⚔
+# ✅02 - Github API 💻
 
 [Bitoid Technologies](https://www.bitcamp.ge/) challenge for Github API calling User Followers and Repositories
 

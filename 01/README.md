@@ -1,4 +1,4 @@
-# ✅01 - Simple Form with Image Upload ⚔
+# ✅01 - Simple Form with Image Upload 📷
 
 [Bitoid Technologies](https://www.bitcamp.ge/) challenge for Simple Form with Image Upload, input validations included
 

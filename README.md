@@ -18,10 +18,6 @@ CREATE TABLE `heroes` (
 )
 ```
 
----
-
----
-
 ## Screenshots
 
 ![App Screenshot](03/vault/screenshot.PNG)

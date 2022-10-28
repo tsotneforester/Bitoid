@@ -1,17 +1,12 @@
-
-# Marvel API ⚔
+#✅03 - Marvel API ⚔
 
 [Bitoid Technologies](https://www.bitcamp.ge/) challenge for API calling and storing
 data in database
-
-
-
 
 ## Installation
 
 Create database **'marvel'** (user - "root" / password - ❌)  
 Create table **'heroes'** by executing sql script
- 
 
 ```bash
 CREATE TABLE `heroes` (
@@ -21,15 +16,11 @@ CREATE TABLE `heroes` (
   `comment` varchar(500) NOT NULL
 )
 ```
-*****
-*****
-    
 
+---
 
-
-
+---
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![App Screenshot](03/vault/screenshot.PNG)

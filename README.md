@@ -1,6 +1,6 @@
 # ✅01 - Simple Form with Image Upload 📷
 
-[Bitoid Technologies](https://www.bitcamp.ge/) challenge for Simple Form with Image Upload, input validations included
+Simple Form with Image Upload, input validations included
 
 ## Screenshots
 
@@ -8,7 +8,7 @@
 
 # ✅02 - Github API 💻
 
-[Bitoid Technologies](https://www.bitcamp.ge/) challenge for Github API calling User Followers and Repositories
+Github API calling User Followers and Repositories
 
 ## Screenshots
 
@@ -16,8 +16,7 @@
 
 # ✅03 - Marvel API ⚔
 
-[Bitoid Technologies](https://www.bitcamp.ge/) challenge for API calling and storing
-data in database
+Marvel API with storing data in database
 
 ## Installation
 
